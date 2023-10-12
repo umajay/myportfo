@@ -15,6 +15,10 @@ print(__name__)
 def about():
     return render_template("index.html")
 
+@app.route('/')
+def about():
+    return render_template("HappyHomeMaker.html")
+
 
 @app.route('/submit_form', methods=['POST', 'GET'])
 def submit_form():
