@@ -18,7 +18,17 @@ def about():
 
 @app.route('/HappyHomeMaker')
 def happy_homemaker():
-    return "Welcome to HappyHomeMaker page"
+    return render_template("HappyHomeMaker.html")
+
+
+@app.route('/PythonDeveloper')
+def python_developer():
+    return render_template("PythonDeveloper.html")
+
+
+@app.route('/Yoga')
+def yoga():
+    return render_template("Yoga.html")
 
 
 @app.route('/submit_form', methods=['POST', 'GET'])
