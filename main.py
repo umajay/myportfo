@@ -16,7 +16,7 @@ def about():
     return render_template("index.html")
 
 
-@app.route('/HappyHomeMaker.html')
+@app.route('/HappyHomeMaker')
 def about():
     return render_template("HappyHomeMaker.html")
 
