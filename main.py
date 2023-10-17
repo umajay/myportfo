@@ -17,7 +17,7 @@ def about():
 
 
 @app.route('/HappyHomeMaker')
-def about():
+def happy_homemaker():
     return "Welcome to HappyHomeMaker page"
 
 
