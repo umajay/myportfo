@@ -31,6 +31,21 @@ def yoga():
     return render_template("Yoga.html")
 
 
+@app.route('/Education')
+def my_education():
+    return render_template("Education.html")
+
+
+@app.route('/WorkExperience')
+def work_experience():
+    return render_template("WorkExperience.html")
+
+
+@app.route('/CoursesandCertification')
+def my_courses():
+    return render_template("CoursesandCertification.html")
+
+
 @app.route('/submit_form', methods=['POST', 'GET'])
 def submit_form():
     if request.method == 'POST':
