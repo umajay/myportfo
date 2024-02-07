@@ -16,34 +16,38 @@ def about():
     return render_template("index.html")
 
 
-@app.route('/HappyHomeMaker')
-def happy_homemaker():
-    return render_template("HappyHomeMaker.html")
+# @app.route('/HappyHomeMaker')
+# def happy_homemaker():
+#     return render_template("HappyHomeMaker.html")
 
+@app.route('/<string:page_name>')
+def happy_homemaker(page_name):
+    return render_template(page_name)
 
-@app.route('/PythonDeveloper')
-def python_developer():
-    return render_template("PythonDeveloper.html")
-
-
-@app.route('/Yoga')
-def yoga():
-    return render_template("Yoga.html")
-
-
-@app.route('/Education')
-def my_education():
-    return render_template("Education.html")
-
-
-@app.route('/WorkExperience')
-def work_experience():
-    return render_template("WorkExperience.html")
-
-
-@app.route('/CoursesandCertification')
-def my_courses():
-    return render_template("CoursesandCertification.html")
+#
+# @app.route('/PythonDeveloper')
+# def python_developer():
+#     return render_template("PythonDeveloper.html")
+#
+#
+# @app.route('/Yoga')
+# def yoga():
+#     return render_template("Yoga.html")
+#
+#
+# @app.route('/Education')
+# def my_education():
+#     return render_template("Education.html")
+#
+#
+# @app.route('/WorkExperience')
+# def work_experience():
+#     return render_template("WorkExperience.html")
+#
+#
+# @app.route('/CoursesandCertification')
+# def my_courses():
+#     return render_template("CoursesandCertification.html")
 
 
 @app.route('/submit_form', methods=['POST', 'GET'])
